@@ -40,7 +40,7 @@ function updateBall() {
   // AI paddle collision
   if (ball.x >= canvas.width - 30 && ball.y > aiY && ball.y < aiY + 100) ball.vx *= -1;
 
-  // Quantum twist: teleport every 300 frames
+  // Quantum twist: teleport every 300 frame
   if (Math.random() < 0.002) {
     ball.x = Math.random() * canvas.width;
     ball.y = Math.random() * canvas.height;
